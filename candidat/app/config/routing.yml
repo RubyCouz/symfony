@@ -1,0 +1,7 @@
+e2_ncandidate:
+    resource: "@E2NcandidateBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

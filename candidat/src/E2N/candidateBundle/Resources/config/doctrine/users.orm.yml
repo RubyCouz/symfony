@@ -1,0 +1,27 @@
+E2N\candidateBundle\Entity\users:
+    type: entity
+    table: null
+    repositoryClass: E2N\candidateBundle\Repository\usersRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        lastname:
+            type: string
+            length: 255
+        firstname:
+            type: string
+            length: 255
+        createDate:
+            type: datetime
+        mail:
+            type: string
+            length: 255
+        motivation:
+            type: text
+        palme:
+            type: integer
+    lifecycleCallbacks: {  }

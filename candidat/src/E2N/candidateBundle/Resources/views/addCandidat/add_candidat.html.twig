@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <title>Ajout d'un candidat</title>
+    </head>
+    <body> 
+        <div class="container">
+               <h1 class="text-center">Formulaire d'inscription</h1>
+            {{ form_start(formView) }}
+                    {{ form_errors(formView) }}
+ <div class="">
+                {{ form_label(formView.lastname) }}
+                {{ form_errors(formView.lastname) }}
+                {{ form_widget(formView.lastname, {'attr': {'class': 'form-group'} }) }}
+            </div>
+            <div class="">
+                {{ form_label(formView.firstname) }}
+                {{ form_errors(formView.firstname) }}
+                {{ form_widget(formView.firstname, {'attr': {'class': 'form-group'} }) }}
+            </div>
+            <div class="">
+                {{ form_label(formView.mail) }}
+                {{ form_errors(formView.mail) }}
+                {{ form_widget(formView.mail, {'attr': {'class': 'form-group'} }) }}
+            </div>
+            <div class="">
+                {{ form_label(formView.motivation) }}
+                {{ form_errors(formView.motivation) }}
+                {{ form_widget(formView.motivation, {'attr': {'class': 'form-group'} }) }}
+            </div>
+            <div class="">
+                {{ form_label(formView.palme) }}
+                {{ form_errors(formView.palme) }}
+                {{ form_widget(formView.palme, {'attr': {'class': 'form-group'} }) }}
+            </div>
+            <div class="">
+                  {{ form_widget(formView.submit, {'attr': {'class': 'btn btn-success'} }) }}
+            </div>
+            {{ form_end(formView) }}   
+        </div>
+    </body>
+</html>
